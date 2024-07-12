@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-menu{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    /* background-color: aqua; */
+    border-bottom: 1px solid black;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+    box-shadow: rgb(49, 49, 49) 0px 50px 100px -20px;
+
+}
+.logo{
+    display: grid;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+    height: 100px;
+}
+.logo h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: -webkit-linear-gradient(white, rgb(157, 118, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menus{
+    grid: 3/4;
+}
+.menus ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    height: 100px;
+}
+.social-icon{
+    grid-column: 4/5;
+}
+.social-icon ul{
+    display: flex;
+    justify-content: end;
+    gap: 20%;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    height: 100px;
+}
+.social-icon ul li{
+    text-align: right;
+}
+.youtube{
+    color: red;
+    font-size: 1.5rem;
+    text-align: right;
+}
+.facebook{
+    color: blue;
+    font-size: 1.5rem;
+}
+.Instagram{
+    color: orangered;
+    font-size: 1.5rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@media (max-width: 1280px) {
+    .nav-menu{
+
+        height: 80px;
+        grid-template-columns: 2rem 1fr 4fr 1fr 2rem;
+    }
+    .logo,
+    .social-icon ul{
+        height: 80px;
+    }
+    .menus ul{
+        height: 80px;
+    }
+    .logo h2{
+        font-size: 30px;
+    }
+    .menus ul li{
+        margin-bottom: 0%;
+    }
+    .social-icon ul li{
+       margin-bottom: 0%;
+    }
+    
+}
+@media (max-width: 840px) {
+    .nav-menu{
+
+        height: 80px;
+        grid-template-columns: 2rem 1fr 1fr 4fr  2rem;
+    }
+    .social-icon{
+        display: none;
+    }
+    .logo{
+        height: 80px;
+    }
+    .menus{
+        grid-column: 4/5
+    }
+    .menus ul{
+        height: 80px;
+    }
+    .logo h2{
+        font-size: 30px;
+    }
+    .menus ul li{
+        margin-bottom: 0%;
+    }
+    
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+select{
+    border: none;
+    font-size: 15px;
+}
